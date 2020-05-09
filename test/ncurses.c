@@ -6483,7 +6483,7 @@ edit_secure(FIELD *me, int c)
 		    break;
 		}
 	    }
-	    set_field_userptr(me, (void *) len);
+	    set_field_userptr(me, (intptr_t) len);
 	    free(temp);
 	}
     }
